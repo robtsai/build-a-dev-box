@@ -71,6 +71,27 @@ git config --global user.email youremail
 </pre>
 
 
+## Python ##
+
+Ubuntu 16 ships with both python 2.7 and python 3.5.
+
+In /usr/bin, python is a symlink to python2.7, so I normally switch out the link.
+
+sudo rm python
+sudo ln -s python3.4 python
+
+Then, you can find a copy of get-pip.py on PyPy to install pip.
+
+And then run, and whatever else you need:
+
+<pre>
+pip install flask
+pip install numpy
+pip install pandas
+</pre>
+
+
+
 
 
 
